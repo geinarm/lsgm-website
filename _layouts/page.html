@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+  Template:  Unika - Responsive One Page HTML5 Template
+  Author:    imransdesign.com
+  URL:     http://imransdesign.com/
+    Designed By: https://www.behance.net/poljakova
+  Version:  1.0 
+-->
+<html lang="en-US">
+  {% include head.html %} 
+
+    <body data-spy="scroll" data-target="#main-navbar">
+      <div class="page-loader"></div>  <!-- Display loading image while page loads -->
+      <div class="body">
+
+        <!--========== BEGIN HEADER ==========-->
+        {% include header-page.html %} 
+        <!-- ========= END HEADER =========-->
+
+        <!-- Begin page header-->
+        <div class="page-header-wrapper">
+            <div class="container">
+                <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <h2>{{ page.title }}</h2>
+                    <div class="devider"></div>
+                    <p class="subtitle">{{ page.subtitle }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- End page header-->
+
+        <!--========== BEGIN CONTENT ==========-->
+        {{ content }}
+        <!-- ========= END CONTENT =========-->
+
+        <!-- Begin footer -->
+        {% include footer.html %} 
+        <!-- End footer -->
+
+      </div><!-- body ends -->
+        
+            
+      <!-- Plugins JS -->
+      <script src="{{ site.baseurl }}/inc/jquery/jquery-1.11.1.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/bootstrap/js/bootstrap.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/owl-carousel/js/owl.carousel.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/stellar/js/jquery.stellar.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/animations/js/wow.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/waypoints.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/isotope.pkgd.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/classie.js"></script>
+      <script src="{{ site.baseurl }}/inc/jquery.easing.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/jquery.counterup.min.js"></script>
+      <script src="{{ site.baseurl }}/inc/smoothscroll.js"></script>
+
+      <!-- Theme JS -->
+      <script src="{{ site.baseurl }}/js/theme.js"></script>
+      <script src="{{ site.baseurl }}/js/lsgm.js"></script>
+
+    </body> 
+        
+</html>
