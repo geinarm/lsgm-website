@@ -1147,3 +1147,25 @@ p.subtitle {
 }
 /* ===== End buttons ===== */
 
+/* ===== Begin MyStuff ===== */
+.modal-dialog {
+	margin-top:100px;
+}
+
+.address-lg {
+	font-size: 1.5em;
+}
+.date-lg {
+	font-size: 1.5em;
+}
+
+.btn-space {
+	margin: 15px 0px
+}
+
+.navbar-title {
+	color: white;
+	font-size: 40px;
+}
+
+/* ===== End MyStuff ===== */
