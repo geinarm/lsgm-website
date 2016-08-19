@@ -19,32 +19,27 @@
 	font-size: 40px;
 }
 
-.test2 {
-	width: 0px;
-	height: 500px;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+ .google-maps {
+    position: relative;
+    padding-bottom: 500px; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
 }
-.test2:after {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 500px;
-	border-bottom: 5px solid #FFFFFF;
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
-.test2:before {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 500px;
-	border-bottom: 5px solid #FFFFFF;
-}
-.test {
-	width: 500px;
-	-webkit-transition: all 1.2s ease-in-out;
-	-moz-transition: all 1.2s ease-in-out;
-	-o-transition: all 1.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 1.2s ease-in-out;
+
+.google-maps .map-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99;
 }
