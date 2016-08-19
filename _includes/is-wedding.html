@@ -35,7 +35,7 @@
           </div>
 
           <a href="https://goo.gl/maps/bndUC113KEx" class="btn btn-primary btn-space">Directions</a>
-          <a href="{{site.baseurl}}/is-travel" class="btn btn-primary">Travel Information</a>
+          <a href="{{ page.url | prepend: site.github.url }}/is-travel" class="btn btn-primary">Travel Information</a>
       </div>
     </div> <!-- /.row -->
 
@@ -51,7 +51,7 @@
           </p>
       </div>
       <div class="col-lg-4 col-sm-4">
-        <img class="img-responsive" src="img/isafjordur2.jpg"/>
+        <img class="img-responsive" src="{{ page.url | prepend: site.github.url }}img/isafjordur2.jpg"/>
       </div>
     </div> <!-- /.row -->
   </div>
