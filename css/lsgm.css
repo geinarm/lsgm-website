@@ -5,7 +5,7 @@ p {
 
 /* ===== Begin intro ===== */
 #intro {
-    height: 100%;
+    min-height: 100%;
 }
 #intro .back-drop {
     height: 100%;
@@ -13,10 +13,7 @@ p {
     background-color: rgba(0,0,0,0.2);
 }
 #intro .title {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    text-transform: uppercase;
+    top:280px;
 }
 #intro .title h1 {
     font-size: 50px;
@@ -83,6 +80,11 @@ p {
 .vspace15  { margin-top: 15px; }
 .vspace30  { margin-top: 30px; }
 .vspace60  { margin-top: 60px; }
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 
 .list-nostyle {
     list-style: none;

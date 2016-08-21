@@ -33,18 +33,33 @@ var lsgm = (function() {
 		});
 	}
 
+    function onResize() {
+	    if ($(window).width() <= 1024) {
+	        if (stellarActivated == true) {
+	            $(window).data('plugin_stellar').destroy();
+	            stellarActivated = false;
+	        }
+	    } else {
+	        if (stellarActivated == false) {
+
+	            $.stellar({
+	               horizontalScrolling: false
+	           });
+	            
+	            $(window).data('plugin_stellar').init();
+	            stellarActivated = true;
+	        }
+	    }
+	}
+
 	$( document ).ready(function() {
-		//$("#text-carousel-intro-section").hide()
-		//$("#text-carousel-intro-section").fadeIn(2000, showTitle);
-		//$(".back-drop").delay(2000).fadeOut(3000);
-		//$("#text-carousel-intro-section .caption").hide();
-		//$("#text-carousel-intro-section .caption").delay(200).slideDown(1500);
 
-		//$(".title .group-1").delay(500).fadeIn({ duration: 1500, queue: false });
-		//$(".title .group-1").stop(true,true).delay(500).animate({ top: "-=100px",}, { duration: 1000, queue: false });
-
-		//$(".title .group-2").stop(true, true).delay(1500).fadeIn({ duration: 1000, queue: false });
-		//$(".title .group-2").animate({ top: "-=100px",}, 1500);
+		//Tutn of stellar on small screens
+		stellarActivated = true;
+		onResize()
+        $(window).resize(function() {
+            onResize();
+        });
 
 		//RSVP
 		$("#btn-rsvp-is").click(function() {
@@ -54,6 +69,7 @@ var lsgm = (function() {
 			
 		});
 
+		//Interactive map toggle
 		$(".google-maps .map-cover").click(function() {
 			console.log("Cover click");
 			$(".google-maps iframe").removeClass("scrolloff");
