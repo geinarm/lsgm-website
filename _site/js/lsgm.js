@@ -34,11 +34,17 @@ var lsgm = (function() {
 	}
 
 	$( document ).ready(function() {
-	//$("#text-carousel-intro-section").hide()
+		//$("#text-carousel-intro-section").hide()
 		//$("#text-carousel-intro-section").fadeIn(2000, showTitle);
-		$(".back-drop").delay(2000).fadeOut(3000);
-		$("#text-carousel-intro-section .caption").hide();
-		$("#text-carousel-intro-section .caption").delay(200).slideDown(1500);
+		//$(".back-drop").delay(2000).fadeOut(3000);
+		//$("#text-carousel-intro-section .caption").hide();
+		//$("#text-carousel-intro-section .caption").delay(200).slideDown(1500);
+
+		//$(".title .group-1").delay(500).fadeIn({ duration: 1500, queue: false });
+		//$(".title .group-1").stop(true,true).delay(500).animate({ top: "-=100px",}, { duration: 1000, queue: false });
+
+		//$(".title .group-2").stop(true, true).delay(1500).fadeIn({ duration: 1000, queue: false });
+		//$(".title .group-2").animate({ top: "-=100px",}, 1500);
 
 		//RSVP
 		$("#btn-rsvp-is").click(function() {

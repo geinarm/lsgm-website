@@ -1,24 +1,57 @@
 
-.modal-dialog {
-	margin-top:100px;
+p {
+    font: 16px/1.6em "Roboto";
 }
 
-.address-lg {
-	font-size: 1.5em;
+/* ===== Begin intro ===== */
+#intro {
+    height: 100%;
 }
-.date-lg {
-	font-size: 1.5em;
+#intro .back-drop {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+#intro .title {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    text-transform: uppercase;
+}
+#intro .title h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+#intro .title p {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-top: 30px;
+}
+#intro .title .title-big {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+#intro .title .title-small {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 25px;
 }
 
-.btn-space {
-	margin: 15px 0px
+.text-outline {
+    text-shadow:
+    2px 1px 0 #000;
 }
 
-.navbar-title {
-	color: white;
-	font-size: 40px;
-}
+/* ===== End intro ===== */
 
+
+/* ===== Begin maps ===== */
  .google-maps {
     position: relative;
     padding-bottom: 500px; // This is the aspect ratio
@@ -43,3 +76,32 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 99;
 }
+/* ===== End maps ===== */
+
+.vspace5  { margin-top: 5px; }
+.vspace10  { margin-top: 10px; }
+.vspace15  { margin-top: 15px; }
+.vspace30  { margin-top: 30px; }
+.vspace60  { margin-top: 60px; }
+
+.list-nostyle {
+    list-style: none;
+}
+
+.modal-dialog {
+    margin-top:100px;
+}
+
+address {
+    font-size: 1.5em;
+}
+
+.text-loud {
+    font-size: 1.5em;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 40px;
+}
+

@@ -118,14 +118,6 @@ a, a:hover, a:focus {
 }
 
 
-
-/* === Rotate Box === */
-.rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
-	background-color: #4E7AC7;
-}
-
-
-
 /* === Progress Bar === */
 .progress {
 	border: 3px solid #4E7AC7;
