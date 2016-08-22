@@ -8,9 +8,10 @@ p {
     min-height: 100%;
 }
 #intro .back-drop {
+    position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
 }
 #intro .title {
     top:280px;
@@ -24,7 +25,6 @@ p {
     color: #FFF;
     letter-spacing: 2px;
     font-size: 24px;
-    margin-top: 30px;
 }
 #intro .title .title-big {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
