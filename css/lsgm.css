@@ -80,6 +80,9 @@ p {
 .vspace15  { margin-top: 15px; }
 .vspace30  { margin-top: 30px; }
 .vspace60  { margin-top: 60px; }
+.vspace120  { margin-top: 120px; }
+.vspace400  { margin-top: 400px; }
+.vspace500  { margin-top: 500px; }
 
 .container-full {
   margin: 0 auto;
