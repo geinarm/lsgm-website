@@ -33,6 +33,30 @@ var lsgm = (function() {
 		});
 	}
 
+	function postRsvpUS() {
+		var values = {};
+		var fields = $( "#us-rsvp-form" ).serializeArray();
+		jQuery.each( fields, function( i, field ) {
+			values[field.name] = field.value;
+		});
+		console.log(values);
+
+		$.ajax({
+			url: "https://docs.google.com/forms/d/e/1FAIpQLSfwc3BjhjfcMEy9qTRuJZXAk9Zo74WVDtfhHvomwXP7tIWVkg/formResponse",
+			data: values,
+			type: "POST",
+			dataType: "xml",
+			statusCode: {
+				0: function() {
+					//alert('Thank you! Your response has been received.');
+					$('#us-rsvp-modal').modal('hide');
+					$('#us-rsvp-btn-toggle span').text('Response Received');
+					$('#us-rsvp-btn-toggle').prop('disabled', true);
+				}
+			}
+		});
+	}
+
     function onResize() {
 	    if ($(window).width() <= 1024) {
 	        if (stellarActivated == true) {
@@ -53,7 +77,7 @@ var lsgm = (function() {
 	}
 
 	$( document ).ready(function() {
-
+		console.log('Ready');
 		//Tutn of stellar on small screens
 		stellarActivated = true;
 		onResize()
@@ -66,7 +90,8 @@ var lsgm = (function() {
 			//postRsvpIs();
 		});
 		$("#btn-rsvp-us").click(function() {
-			
+			console.log('RSVP US');
+			postRsvpUS();
 		});
 
 		//Interactive map toggle

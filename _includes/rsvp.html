@@ -18,10 +18,10 @@
           <h3>United States Wedding</h3>
           <img class="img-responsive img-rounded" src="{{ site.github.url }}/img/us-guns.jpg"/>
           <p>
-            Coming soon!
+            We're looking forward to hearing from you!<br/> Click here to RSVP.
           </p>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#us-rsvp-modal" disabled>
-            RSVP Now
+          <button type="button" id="us-rsvp-btn-toggle" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#us-rsvp-modal">
+            <span>RSVP Now</span>
           </button>
         </div>
         <div class="col-lg-4 col-lg-offset-2 wow fadeInRight">
@@ -31,7 +31,7 @@
             Coming soon!
           </p>
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#is-rsvp-modal" disabled>
-            RSVP Now
+            <span>RSVP Now</span>
           </button>
         </div>
       </row>
@@ -43,55 +43,42 @@
 <div class="modal fade" id="us-rsvp-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-body">
-
-          <form id="us-rsvp-form">
-
-            <fieldset class="form-group">
-              <legend>Will you come to the party?</legend>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="entry.1003793259" id="acceptRadio1" value="Accept with pleasure">
-                  Accept with pleasure
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="entry.1003793259" id="acceptRadio2" value="Decline with regret">
-                  Decline with regret
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset class="form-group">
-              <legend>What do you want to eat?</legend>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="entry.643963357" id="foodRadio1" value="Meat">
-                  Meet
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="entry.643963357" id="foodRadio2" value="Fish">
-                  Fish
-                </label>
-              </div>
-            </fieldset>
-
-            <div class="form-group">
-              <label for="inputNames">Who is coming</label>
-              <input type="text" name="entry.1017406102" class="form-control" id="inputNames" >
-              <small id="emailHelp" class="form-text text-muted">Enter the full name of everyone in your group separated by a comma</small>
+      <form id="us-rsvp-form">
+        <div class="modal-body">
+          <fieldset class="form-group">
+            <legend>Will you come to the party?</legend>
+            <div class="radio">
+              <label>
+                <input type="radio" name="entry.1003793259" id="acceptRadio1" value="Accept with pleasure">
+                Accept with pleasure
+              </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="entry.1003793259" id="acceptRadio2" value="Decline with regret">
+                Decline with regret
+              </label>
+            </div>
+          </fieldset>
 
-            <button id="btn-rsvp-us" type="button" class="btn btn-primary">Submit</button>
-          </form>
+          <div class="form-group">
+            <label for="inputNames">Who is coming</label>
+            <textarea name="entry.1017406102" class="form-control" id="inputNames"></textarea>
+            <small id="emailHelp" class="form-text text-muted">Enter the name of each guest you are responding for</small>
+          </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
+          <div class="form-group">
+            <label for="inputEmail">Your email</label>
+            <input type="text" name="entry.758663035" class="form-control" id="inputEmail"/>
+            <small id="emailHelp" class="form-text text-muted">If you want the latest gossip and insider information</small>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button id="btn-rsvp-us" type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -108,7 +95,7 @@
               <legend>Will you come to the party?</legend>
               <div class="radio">
                 <label>
-                  <input type="radio" name="entry.1003793259" id="acceptRadio1" value="Accept with pleasure">
+                  <input type="radio" name="entry.1003793259" id="acceptRadio1" value="Accept with pleasure" required="True">
                   Accept with pleasure
                 </label>
               </div>
