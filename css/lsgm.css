@@ -104,6 +104,10 @@ address {
 .text-loud {
     font-size: 1.5em;
 }
+.fine-print {
+    font-size: 0.9em;
+    font-style: italic;
+}
 
 .navbar-title {
     color: white;
